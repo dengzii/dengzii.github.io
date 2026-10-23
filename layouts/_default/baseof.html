@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keywords }}">
+    <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700" type="text/css">
+    <link href="/static/app.css" type="text/css" rel="stylesheet">
+    {{ if .Section }}<link href="/static/markdown.css" type="text/css" rel="stylesheet">{{ end }}
+    <link rel="shortcut icon" type="image/icon" href="/static/favicon.icon">
+</head>
+<body>
+<div>
+    {{ partial "header.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+</div>
+</body>
+</html>

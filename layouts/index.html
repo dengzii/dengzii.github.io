@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="main">
+    <ul>
+        {{ $pages := where .Site.RegularPages ".Params.category" "!=" nil }}
+        {{ range $pages }}
+        <li>
+            <div class="post">
+                <span class="post-created-at">{{ .Date.Format "2006-01-02" }}</span>
+                <a class="post-title" href="{{ .RelPermalink }}">
+                    <span class="post-category">{{ .Params.category }} · </span>{{ .Title }}</a>
+                <br>
+                <small class="post-content">{{ .Summary | plainify | truncate 120 }}</small>
+            </div>
+        </li>
+        {{ else }}
+        <li>No data</li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

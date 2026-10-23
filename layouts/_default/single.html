@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="main">
+    {{ if .Section }}
+    <div class="article">
+        <h1 class="article-title">{{ .Title }}</h1>
+        <div class="article-info">
+            <span class="article-category">{{ .Params.category }}</span>
+            <span> / </span>
+            <span class="article-updated-at">{{ .Date.Format "2006-01-02" }}</span>
+        </div>
+        <div class="article-content">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ else }}
+    <div class="about">
+        {{ .Content }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}
