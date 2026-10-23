@@ -1,3 +1,10 @@
+---
+layout: post
+title: gin 自动映射参数及自动校验
+date: 2021-02-03
+category: Golang
+---
+
 近期在学习gin的时候发现对请求参数的校验很麻烦, 且重复代码很多, 进行一番思考和实践后发现了一种使用反射实现在 controller 函数上实现自动提取请求参数到指定的 struct, 并且自动使用 validation 进行校验.
 
 ## 起因

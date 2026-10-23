@@ -1,3 +1,10 @@
+---
+layout: post
+title: Android View 事件分发
+date: 2019-04-08
+category: Android
+---
+
 事件分发可以说是 Android 中非常非常重要的知识了, 如果作为一个 Android 开发人员没有了解过事件分发, 那他就不能是一个合格的 Android 程序员, 作为一个
 中高级 Android 开发工程师，是必须要深入了解的。学习事件分发主要解决的问题是多层 ViewGroup ，View 嵌套事件冲突, 这篇文章主要分析的是手指的事件, 而
 对于其他例如鼠标, 触控笔, 等的事件, 是有略微不同的.

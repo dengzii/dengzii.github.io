@@ -1,3 +1,9 @@
+---
+layout: post
+title: View 的创建 PhoneWindow 和 DecorView
+date: 2019-04-08
+category: Android
+---
 
 在 Android App中, 所有的数据内容都是通过 View 展示给用户的, Android 通过一系列机制和流程将这些承载着各种交互控件和展示数据的 View 展示出来.
 在开发中, 我们也经常需要用到自定义 view, 因此, 我们非常有必要学习一下 view 的创建流程,

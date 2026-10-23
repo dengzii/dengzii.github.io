@@ -1,3 +1,9 @@
+---
+layout: page
+title: 关于我
+permalink: /about.html
+date: 2021-01-13
+---
 
 ## 关于我
 

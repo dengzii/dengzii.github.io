@@ -1,3 +1,10 @@
+---
+layout: post
+title: Android Notification 学习笔记
+date: 2019-02-27
+category: Android
+---
+
 通知栏通知在Android APP中的使用极为频繁，比如短信通知，QQ，微信消息通知，App 更新进度转态显示，截图时后图片进行删除或分享，查看操作等等。本篇文章记录了如何使用 Notification 显示消息, 设置提示音，呼吸灯，震动，以及响应用户对消息的处理动作。
 
 # Notification 状态栏通知

@@ -1,3 +1,10 @@
+---
+layout: post
+title: Gradle 初探
+date: 2020-03-13
+category: Android
+---
+
 Gradle 作为一个现代的基于 JVM 自动化构建工具, 它抛弃了 Maven 和 Ant 使用 xml 配置项目的繁琐形式,使用 Groovy DSL, 或 Kotlin DSL 来配置构建项目, 它非常强大, 高可定制, 快速, 可用于构建 Java, Android, C++, Kotlin, JavaScript 项目, 是 Android 官方构建工具.
 
 [Gradle 官方用户引导](https://gradle.org/guides/#getting-started)

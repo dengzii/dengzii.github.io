@@ -1,3 +1,10 @@
+---
+layout: post
+title: GlideIM-Golang实现的高性能的分布式IM
+date: 2022-04-19
+category: Golang
+---
+
 GlideIM 是一款真正的**完全开源**, Golang 实现的高性能分布式 IM 服务, 有完整的安卓 APP 示例, JAVA SDK, Web 端示例, 持续更新迭代中.
 
 GlideIM 支持单实例, 分布式部署. 支持 WebSocket, TCP 两种连接协议, 内置 JSON, ProtoBuff 两种消息交换协议, 并支持添加其他协议, 消息加密等. 还实现了智能心跳保活机制, 死链接检测, 消息送达机制等功能.

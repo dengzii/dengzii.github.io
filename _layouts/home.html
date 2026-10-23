@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="main">
+    <ul>
+        {% assign posts = site.pages | where: "layout", "post" | sort: "date" | reverse %}
+        {% for article in posts %}
+        <li>
+            <div class="post">
+                <span class="post-created-at">{{ article.date | date: "%Y-%m-%d" }}</span>
+                <a class="post-title" href="{{ article.url }}">
+                    <span class="post-category">{{ article.category }} · </span>{{ article.title }}</a>
+                <br>
+                <small class="post-content">{{ article.content | markdownify | strip_html | truncate: 120 }}</small>
+            </div>
+        </li>
+        {% else %}
+        <li>No data</li>
+        {% endfor %}
+    </ul>
+</div>
