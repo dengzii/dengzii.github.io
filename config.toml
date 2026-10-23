@@ -8,6 +8,17 @@ description = '世界上只有一种英雄主义， 那就是在了解生活的�
 keywords = "dengzii, android, java, go, 前端, dengzii's blog, 凳子的博客"
 bio = 'talk is cheap, show me the code.'
 
+[module]
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static/static'
+
 [markup]
 [markup.goldmark.renderer]
 unsafe = true
